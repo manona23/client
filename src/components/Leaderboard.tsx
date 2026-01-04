@@ -37,7 +37,7 @@ const Leaderboard = () => {
     return (
       <div className="leaderboard-container">
         <LanguageToggle />
-        <div className="error">{t('No data available')}</div>
+        <span className="error">{t('No data available')}</span>
       </div>
     );
   }
