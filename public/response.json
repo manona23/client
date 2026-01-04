@@ -1,0 +1,87 @@
+{
+  "school": {
+    "id": "1",
+    "name": {
+      "ar": "مدرسة العلم الحديث",
+      "en": "Modern Science School"
+    },
+    "image": "https://storage.example.com/schools/modern-science.jpg"
+  },
+  "students": [
+    {
+      "id": "201",
+      "name": {
+        "ar": "سارة إبراهيم",
+        "en": "Sara Ibrahim"
+      },
+      "grade": "9",
+      "section": "C",
+      "schoolName": {
+        "ar": "مدرسة العلم الحديث",
+        "en": "Modern Science School"
+      },
+      "points": 2620,
+      "studentImage": "https://storage.example.com/students/201.jpg"
+    },
+    {
+      "id": "202",
+      "name": {
+        "ar": "محمد عبدالله",
+        "en": "Mohammed Abdullah"
+      },
+      "grade": "12",
+      "section": "A",
+      "schoolName": {
+        "ar": "مدرسة العلم الحديث",
+        "en": "Modern Science School"
+      },
+      "points": 2410,
+      "studentImage": "https://storage.example.com/students/202.jpg"
+    },
+    {
+      "id": "101",
+      "name": {
+        "ar": "أحمد محمد",
+        "en": "Ahmed Mohammed"
+      },
+      "grade": "10",
+      "section": "A",
+      "schoolName": {
+        "ar": "مدرسة النور الثانوية",
+        "en": "Al-Noor High School"
+      },
+      "points": 2450,
+      "studentImage": "https://storage.example.com/students/101.jpg"
+    },
+    {
+      "id": "102",
+      "name": {
+        "ar": "فاطمة علي",
+        "en": "Fatima Ali"
+      },
+      "grade": "10",
+      "section": "A",
+      "schoolName": {
+        "ar": "مدرسة النور الثانوية",
+        "en": "Al-Noor High School"
+      },
+      "points": 2380,
+      "studentImage": "https://storage.example.com/students/102.jpg"
+    },
+    {
+      "id": "103",
+      "name": {
+        "ar": "خالد حسن",
+        "en": "Khaled Hassan"
+      },
+      "grade": "11",
+      "section": "B",
+      "schoolName": {
+        "ar": "مدرسة النور الثانوية",
+        "en": "Al-Noor High School"
+      },
+      "points": 2150,
+      "studentImage": null
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+.student-card {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  gap: 1rem;
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    border-color: #e6e8eb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.student-card-rank {
+  min-width: 40px;
+  color: #828e99;
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+
+  [dir='rtl'] & {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+  }
+}
+
+.student-card-avatar {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+}
+
+.student-card-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid #e6e8eb;
+  border-radius: 50%;
+}
+
+.student-card-avatar-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #e6e8eb;
+  border-radius: 50%;
+  background: #e6e8eb;
+  color: #828e99;
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+
+  [dir='rtl'] & {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+  }
+}
+
+.student-card-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.student-card-name {
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  [dir='rtl'] & {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+  }
+}
+
+.student-card-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.student-card-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.student-card-icon {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+}
+
+.student-card-detail-text {
+  color: #666;
+  font-size: 0.9rem;
+  font-family: 'Poppins', sans-serif;
+  white-space: nowrap;
+
+  [dir='rtl'] & {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+  }
+}
+
+.student-card-points {
+  min-width: 100px;
+  color: #1a1a1a;
+  font-weight: 700;
+  font-size: 1.25rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: right;
+  white-space: nowrap;
+
+  [dir='rtl'] & {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    text-align: left;
+  }
+}
+
+.top-student-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+
+  &.first {
+    z-index: 3;
+    order: 2;
+    transform: scale(1.05);
+
+    .crown-icon {
+      display: block;
+    }
+  }
+
+  &.second {
+    z-index: 2;
+    order: 1;
+    margin-block-start: 55px;
+  }
+
+  &.third {
+    z-index: 1;
+    order: 3;
+
+    margin-block-start: 105px;
+  }
+}
+
+.top-student-rank {
+  width: fit-content;
+  margin-inline: auto;
+  padding: 0.25rem 1rem;
+  border-radius: 50%;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+
+  &.first {
+    order: 2;
+    background-color: #ea3a37;
+  }
+  &.second {
+    order: 1;
+    background-color: #fbca2c;
+  }
+  &.third {
+    order: 3;
+    background-color: #03760f;
+  }
+}
+
+@media (max-width: 768px) {
+  .student-card {
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+
+  .student-card-rank {
+    min-width: 35px;
+    font-size: 1.25rem;
+  }
+
+  .student-card-avatar {
+    width: 50px;
+    height: 50px;
+  }
+
+  .student-card-avatar-placeholder {
+    font-size: 1.25rem;
+  }
+
+  .student-card-name {
+    font-size: 1rem;
+  }
+
+  .student-card-details {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .student-card-points {
+    width: 100%;
+    margin-top: 0.5rem;
+    text-align: left;
+
+    [dir='rtl'] & {
+      text-align: right;
+    }
+  }
+}

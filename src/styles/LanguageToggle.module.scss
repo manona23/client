@@ -1,0 +1,63 @@
+.languageToggle {
+  display: flex;
+  z-index: 1000;
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  gap: 0.5rem;
+  border: 2px solid #e6e8eb;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: #666;
+  font-weight: 600;
+  font-size: 0.9rem;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: #828e99;
+    background: #f5f7fa;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  .separator {
+    color: #e6e8eb;
+    font-weight: 400;
+  }
+
+  span {
+    transition: color 0.3s ease;
+
+    &.active {
+      color: #1a1a1a;
+      font-weight: 700;
+    }
+  }
+}
+
+:global([dir='rtl']) .languageToggle {
+  right: auto;
+  left: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .languageToggle {
+    top: 1rem;
+    right: 1rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  :global([dir='rtl']) .languageToggle {
+    right: auto;
+    left: 1rem;
+  }
+}
