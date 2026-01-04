@@ -42,9 +42,9 @@ const TopStudentCard = ({ student, index }: StudentCardProps) => {
               />
             </>
           ) : (
-            <div className="student-avatar-placeholder">
+            <span className="student-avatar-placeholder">
               {getLocalizedName(student.name).charAt(0).toUpperCase()}
-            </div>
+            </span>
           )}
         </div>
         <h3 className="student-name">{getLocalizedName(student.name)}</h3>
